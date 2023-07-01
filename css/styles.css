@@ -287,8 +287,14 @@ body {
   text-align: center;
 }
 .hero {
-  background-color: #2e2f42;
   padding: 188px 0 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/main-background.jpg);
+  background-size: cover;
+  background-color: #2e2f42;
 }
 /**
   |============================
@@ -300,6 +306,46 @@ body {
   | Main
   |============================
 */
+
+/* Advantages */
+
+.advantages-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.advantages-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.advantages-list-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+/* Advantages Icons */
+
+.advantages-icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  width: 64px;
+  height: 64px;
+}
+.advantages-icons-wrapper {
+  display: flex;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background: var(--cloud, #f4f4fd);
+}
+
+/* /Advantages */
+
+/* Speciality */
 
 .speciality-section {
   padding-bottom: 120px;
@@ -323,25 +369,9 @@ body {
   flex-basis: calc((100% - 48px) / 3);
 }
 
-.advantages-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+/* /Speciality */
 
-.advantages-list {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.advantages-list-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
-}
-
-.portfolio-page-section {
-  padding-top: 96px;
-  padding-bottom: 120px;
-}
+/* Team */
 
 .team-section {
   background-color: #f4f4fd;
@@ -370,38 +400,80 @@ body {
   padding-right: 16px;
 }
 
+.team-background {
+  background-color: #ffffff;
+}
+
+/* Social List */
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #404bbf;
+}
+
+.social-list-icon {
+  fill: #f4f4fd;
+}
+
 .section-title {
   margin-bottom: 72px;
 }
 
-.team-background {
+/* /Team */
+
+/* Customers */
+
+.customers-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.customers-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  border-radius: 4px;
+  border: 1px solid var(--lightslate, #8e8f99);
   background-color: #ffffff;
 }
+
+.customers-icon {
+  fill: #8e8f99;
+  width: 104px;
+  height: 56px;
+}
+/* /Customers */
 /**
   |============================
   | /Main
   |============================
 */
-/**
-  |============================
-  | Footer
-  |============================
-*/
-.footer {
-  background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.text-footer {
-  max-width: 264px;
-}
-/**
-  |============================
-  | /Footer
-  |============================
-*/
-/* Portfolio page */
 /**
   |============================
   | Filters
@@ -444,7 +516,6 @@ body {
   color: #ffffff;
   border: 1px solid transparent;
 }
-
 /**
   |============================
   | /Filters
@@ -457,6 +528,8 @@ body {
 */
 .portfolio-page-section {
   background-color: #ffffff;
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .portfolio-list {
@@ -485,5 +558,55 @@ body {
 /**
   |============================
   | /Portfolio
+  |============================
+*/
+
+/*|============================
+  | Footer
+  |============================
+*/
+.footer {
+  background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.text-footer {
+  max-width: 264px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.footer-social-text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  color: #ffffff;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.footer-social-icon {
+  fill: #f4f4fd;
+}
+
+/**
+  |============================
+  | /Footer
   |============================
 */

@@ -607,7 +607,6 @@ body {
 
 .footer-social-text {
   display: flex;
-  justify-content: center;
   margin-bottom: 16px;
   font-size: 16px;
   font-weight: 500;
@@ -640,10 +639,12 @@ body {
 }
 
 .footer-social-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
   margin-right: 120px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
 }
 
 /**
